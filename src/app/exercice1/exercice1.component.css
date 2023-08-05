@@ -1,0 +1,14 @@
+span {
+  text-decoration: underline;
+}
+
+.form-container {
+  margin: auto;
+  max-width: 800px;
+}
+
+.form-field {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}

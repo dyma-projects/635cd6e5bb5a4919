@@ -1,0 +1,24 @@
+<h2>Exercice 1</h2>
+<div class="form-container">
+  <div class="form-field">
+    <label for="familyName">Votre nom de famille</label>
+    <input
+      (input)="setUpperCasedFamilyName($event.target)"
+      name="familyName"
+      type="text"
+    />
+  </div>
+  <div class="form-field">
+    <label for="upperCasedFamilyName">Votre nom de famille en majuscule</label>
+    <input
+      disabled
+      name="upperCasedFamilyName"
+      type="text"
+      [value]="upperCasedFamilyName"
+    />
+  </div>
+  <p>
+    Votre nom de famille en majuscule et souligné :
+    <span>{{ upperCasedFamilyName }}</span>
+  </p>
+</div>
